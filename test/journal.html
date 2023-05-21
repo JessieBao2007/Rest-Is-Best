@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journal Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript">
+        function saveEdits() {
+
+            //get the editable element
+            var editElem = document.getElementById("edit");
+            //get the edited element content
+            var userVersion = editElem.innerHTML;
+            //save the content to local storage
+            localStorage.userEdits = userVersion;
+            //write a confirmation to the user
+            //  document.getElementById("update").innerHTML="- Answer saved!";
+
+            //for number 2
+            var editElem2 = document.getElementById("edit2");
+            var userVersion2 = editElem2.innerHTML;
+            localStorage.userEdits2 = userVersion2;
+
+            //for number 3
+            var editElem3 = document.getElementById("edit3");
+            var userVersion3 = editElem3.innerHTML;
+            localStorage.userEdits3 = userVersion3;
+
+            //for number 4
+            var editElem4 = document.getElementById("edit4");
+            var userVersion4 = editElem4.innerHTML;
+            localStorage.userEdits4 = userVersion4;
+
+            //for number 5
+            var editElem5 = document.getElementById("edit5");
+            var userVersion5 = editElem5.innerHTML;
+            localStorage.userEdits5 = userVersion5;
+
+            //for number 6
+            var editElem6 = document.getElementById("edit6");
+            var userVersion6 = editElem6.innerHTML;
+            localStorage.userEdits6 = userVersion6;
+
+            //for number 7
+            var editElem7 = document.getElementById("edit7");
+            var userVersion7 = editElem7.innerHTML;
+            localStorage.userEdits7 = userVersion7;
+
+        }
+        function checkEdits() {
+            //find out if the user has previously saved edits
+            if (localStorage.userEdits != null)
+                document.getElementById("edit").innerHTML = localStorage.userEdits;
+
+            if (localStorage.userEdits2 != null)
+                document.getElementById("edit2").innerHTML = localStorage.userEdits2;
+
+            if (localStorage.userEdits3 != null)
+                document.getElementById("edit3").innerHTML = localStorage.userEdits3;
+
+            if (localStorage.userEdits4 != null)
+                document.getElementById("edit4").innerHTML = localStorage.userEdits4;
+
+            if (localStorage.userEdits5 != null)
+                document.getElementById("edit5").innerHTML = localStorage.userEdits5;
+
+            if (localStorage.userEdits6 != null)
+                document.getElementById("edit6").innerHTML = localStorage.userEdits6;
+
+            if (localStorage.userEdits7 != null)
+                document.getElementById("edit7").innerHTML = localStorage.userEdits7;
+        }
+
+    </script>
+</head>
+
+
+<body onload="checkEdits()">
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">Placeholder</a></div>
+            <ul>
+                <li><a href="file:///C:/Users/kitty/test/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/kitty/test/info.html">Info</a></li>
+                <li><a href="file:///C:/Users/kitty/test/routine.html">Routine</a></li>
+                <li><a href="file:///C:/Users/kitty/test/journal.html">Journal</a></li>
+                <li><a href="file:///C:/Users/kitty/test/alarm.html">Alarm</a></li>
+                <li><a href="file:///C:/Users/kitty/test/music.html">Music</a></li>
+             </ul>
+        </div>
+    </nav>
+
+    <div class="container journal">
+        <h1 style="font-size:300%;">Journal Entry</h1>
+        <p style="font-size:150%;">feel free to let your thoughts and feelings out</p>
+        <input type="button" value="Click to save your answers" onclick="saveEdits()" />
+        <br>
+        <section>
+            <label for="freeform">1. If you discovered an alien, how would you interact with them?:</label>
+            <br>
+
+        <ul>
+            <li>
+                <div id="edit" contenteditable="true">
+                <p>Answer</p>
+            </li>
+        </ul>
+
+
+            <p>
+                <div id="edit" contenteditable="true">
+                    <p>
+                        Answer
+                    </p>
+                </div>
+            <p>
+        </section>
+        <br>
+        <section>
+            <label for="freeform">2. How has your perspective of Earth and humanity changed since experiencing space travel?:</label>
+            <br>
+            <p>
+                <div id="edit2" contenteditable="true">
+                    <p>
+                        Answer
+                    </p>
+                </div>
+            <p>
+        </section>
+        <br>
+
+        <label for="freeform">3. Reflect on a moment during your mission when you felt a profound sense of awe or wonder?:</label>
+        <br>
+        <p>
+            <div id="edit3" contenteditable="true">
+                <p>
+                    Answer
+                </p>
+            </div>
+        <p>
+            <br>
+
+            <label for="freeform">4. If you could bring any one item from Earth with you on your space journey, what would it be and why?:</label>
+            <br>
+        <p>
+            <div id="edit4" contenteditable="true">
+                <p>
+                    Answer
+                </p>
+            </div>
+        <p>
+            <br>
+
+            <label for="freeform">5. What challenges have you overcome, and what have you learned from them?:</label>
+            <br>
+        <p>
+            <div id="edit5" contenteditable="true">
+                <p>
+                    Answer
+                </p>
+            </div>
+        <p>
+            <br>
+
+            <label for="freeform">6. What was the most amusing or unexpected moment that happened during your space journey?:</label>
+            <br>
+        <p>
+            <div id="edit6" contenteditable="true">
+                <p>
+                    Answer
+                </p>
+            </div>
+        <p>
+            <br>
+
+            <label for="freeform">7. If you could invent a zero-gravity sport to play in the spacecraft, what would it be and how would the rules differ from traditional sports?:</label>
+            <br>
+        <p>
+            <div id="edit7" contenteditable="true">
+                <p>
+                    Answer
+                </p>
+            </div>
+        <p>
+
+    </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="file:///C:/Users/kitty/test/index.html">Rest is Best </a></div>
+            <ul>
+                <li><a href="file:///C:/Users/kitty/test/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/kitty/test/info.html">Info</a></li>
+                <li><a href="file:///C:/Users/kitty/test/routine.html">Routine</a></li>
+                <li><a href="file:///C:/Users/kitty/test/jor2.html">Journal</a></li>
+                <li><a href="file:///C:/Users/kitty/test/alarm.html">Alarm</a></li>
+                <li><a href="file:///C:/Users/kitty/test/music.html">Music</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+<div class="container alarms">
+   
+
+
+        <div id="myBox">
+            <div id="time">00:00:00</div>
+            <br>
+            <h3> Sleep Time</h3>
+            <select name = "" id="alarmHrs"></select>
+            <select name= "" id="alarmMins" ></select>
+            <select name = "" id="alarmSecs"></select>
+            <br>
+            <br>
+            <div id="myDiv">
+            <label for=" " >Choose Alarm Sound:</label>
+            <br>
+            <select name=" " id="mySelect"></select>
+            
+            </div>
+            <button id="mySetButton">Alarm Set</button>
+            <button id="myClearButton">Alarm Clear</button>
+        <p>If wish to sleep later, do not press Alarm Set. Otherwise press Alarm Set.</p>
+        <p><a href="file:///C:/Users/kitty/website/wake.html" target="_blank" rel="noopener noreferer">Wake Up time</a><p>
+        </div>
+        
+        <script src="sleepa.js"> </script>
+    
+
+
+
+
+
+
+
+<button type = "submit" class ="btn" onClick ="openPopup()"">Submit</button>
+
+
+
+    <div class="popup" id="popup">
+        <img src="Emoticon_Face_Smiley_GE.png">
+        <h2>COOL</h2>
+        <p>COWS</p>
+        <button type="button" onClick = "closePopup()">ok</button>
+
+
+    </div>
+
+
+
+
+
+   
+
+
+
+
+<script>
+
+let popup = document.getElementById("popup");
+
+function openPopup(){
+popup.classList.add("open-popup");
+
+}
+
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
+
+
+  
+
+
+    </script>
+
+
+
+
+</div>
+
+
+
+
+</body>
+</html>
